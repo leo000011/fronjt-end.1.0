@@ -1,5 +1,12 @@
+
 import Button from "./components/button/button";
 import Card from "./components/card/card";
+// import {
+//   Accordion,
+//   AccordionItem,
+//   AccordionContent,
+//   AccordionTrigger,
+// } from "./components/ui/accordion";
 
 function App() {
   return (
@@ -27,12 +34,12 @@ function App() {
               </p>
               <div className="text-center p-5 ">
                 {" "}
-                <Button linke="dsa" />
+                <Button linke="#jkl" />
               </div>
             </div>
           </div>
         </div>
-        <div className="   bg-[#000] p-2">
+        <div className="   bg-[#000] px-2 py-10">
           <h1 className="text-white text-center py-10 text-[25px]  md:text-[35px] font-bold">
             Benefícios do Projetos
           </h1>
@@ -54,21 +61,60 @@ function App() {
               description="Varia dependendo do modelo e do tamanho."
             />
           </div>
-        </div>
-
-        <div className="bg-[#d19f37] p-5">
-          <div className="text-center space-y-4">
-            <h1 className="text-[35px] font-bold" >O que é um Projeto de Carretinha?</h1> 
-            <p className="text-[19px]">Um projeto de carretinha é um
-            planejamento detalhado de uma carretinha feita sob medida para
-            diferentes finalidades, como transporte de cargas leves, uso
-            agrícola, recreação ou até mesmo como suporte para pequenas
-            empresas. Cada projeto é único, podendo incluir variações no
-            tamanho, tipo de materiais e funcionalidades, para garantir que o
-            cliente receba uma carretinha que atenda perfeitamente às suas
-            necessidades.</p>
+          <div className="text-center p-5 ">
+            {" "}
+            <Button linke="#jkl" />
           </div>
         </div>
+
+        <div className="bg-[#d19f37] p-5 flex justify-center">
+          <div className="text-center space-y-4 w-[600px]">
+            <h1 className="text-[35px] font-bold">
+              O que é um Projeto de Carretinha?
+            </h1>
+            <p className="text-[19px] font-poppins ">
+              Um projeto de carretinha é um planejamento detalhado de uma
+              carretinha feita sob medida para diferentes finalidades, como
+              transporte de cargas leves, uso agrícola, recreação ou até mesmo
+              como suporte para pequenas empresas. Cada projeto é único, podendo
+              incluir variações no tamanho, tipo de materiais e funcionalidades,
+              para garantir que o cliente receba uma carretinha que atenda
+              perfeitamente às suas necessidades.
+            </p>
+          </div>
+        </div>
+
+        <div className="bg-[#ebebeb] p-10 space-y-5 flex justify-center  ">
+          <div className="  w-[800px] flex justify-around flex-wrap items-center">
+            <h1 className="font-poppins font-bold text-4xl">
+              Acesso Imediato <br />a Tudo isso Hoje!
+            </h1>
+
+            <div className="text-center ">
+              <h2 className="font-poppins font-medium text-3xl">
+                DE{" "}
+                <span className="line-through font-semibold text-red-500 ">
+                  R$ 120
+                </span>{" "}
+                POR
+                <br /> <span className="text-7xl font-bold">R$ 50</span>
+              </h2>
+            
+              <div id="jkl" className="text-center p-5 ">
+                {" "}
+                <Button linke="https://wa.me/+5577988526364" />
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <Accordion type="single"  collapsible>
+          <AccordionItem value="item-1">
+            <AccordionTrigger className="font-poppins no-underline  text-[19px] px-[10px]"></AccordionTrigger>
+            <AccordionContent className="px-[10px]">
+              Yes. It adheres to the WAI-ARIA design pattern.
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion> */}
       </div>
     </>
   );
