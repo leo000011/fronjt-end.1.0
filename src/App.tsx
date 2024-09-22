@@ -61,7 +61,7 @@ function App() {
               description="Varia dependendo do modelo e do tamanho."
             />
           </div>
-          <div className="text-center p-5 ">
+          <div className="flex justify-center p-5 ">
             {" "}
             <Button linke="#jkl" />
           </div>
